@@ -1,0 +1,17 @@
+.header {
+  background-color: #041827;
+  color: #ffffff;
+}
+
+.header__container {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,101 @@
+.contact-card {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  background-color: #041827;
+  color: #ffffff;
+  grid-template-columns: 100px 1fr;
+}
+
+.contact-card--add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  & h3 {
+    margin: 0;
+  }
+}
+
+.contact-card__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.contact-card__information {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card__text {
+  margin: 0;
+}
+
+.contact-card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  grid-column: span 2;
+}
+
+.contact-card__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    content: '';
+  }
+}
+
+.contact-card__button--delete::after {
+  background-image: url('../../../public/delete.svg');
+}
+
+.contact-card__button--edit::after {
+  background-image: url('../../../public/edit.svg');
+}
+
+.contact-card__button--add {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+}

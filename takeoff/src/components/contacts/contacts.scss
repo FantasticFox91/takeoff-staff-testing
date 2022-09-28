@@ -1,0 +1,18 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__sorting {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.contacts__input {
+  padding: 10px 15px;
+  font: inherit;
+  border: none;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
