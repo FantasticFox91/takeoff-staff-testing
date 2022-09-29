@@ -7,7 +7,7 @@ function Header(): JSX.Element {
     <header className="header">
       <div className="container header__container">
         <h2 className='header__title title'>
-          <Link className='header__link' to={AppRoute.Root}>Мои контакты</Link>
+          <Link className='header__link' to={AppRoute.Contacts}>Мои контакты</Link>
         </h2>
         <Link className='header__button primary-button' to={AppRoute.Login}>Войти</Link>
       </div>

@@ -1,10 +1,21 @@
 .contact-card {
   display: grid;
   gap: 10px;
-  padding: 20px;
+  padding: 15px;
   background-color: #041827;
   color: #ffffff;
   grid-template-columns: 100px 1fr;
+}
+
+.contact-card--edit {
+  display: flex;
+}
+
+.contact-card__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-card--add {
@@ -72,6 +83,14 @@
   background-image: url('../../../public/edit.svg');
 }
 
+.contact-card__button--save::after {
+  background-image: url('../../../public/save.svg');
+}
+
+.contact-card__button--cancel::after {
+  background-image: url('../../../public/cross.svg');
+}
+
 .contact-card__button--add {
   position: relative;
   display: flex;
@@ -98,4 +117,18 @@
     background-color: #000000;
     transform: rotate(90deg);
   }
+}
+
+.contact-card__field {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contact-card__label {
+  display: block;
+}
+
+.contact-card__input {
+  width: 100%;
 }

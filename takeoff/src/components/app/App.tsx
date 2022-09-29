@@ -6,7 +6,11 @@ import MainPage from '../../pages/main-page/main-page';
 import NotFoundPage from '../../pages/not-found-page/not-found-page';
 import PrivateRoute from '../private-route/private-route';
 
-function App() {
+type AppProps = {
+  isLogined: boolean,
+}
+
+function App({isLogined}: AppProps) {
   const authStatus = AuthorizationStatus.Auth;
   return (
     <BrowserRouter>
